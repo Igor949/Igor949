@@ -29,7 +29,7 @@ class House():
         return self.name > other.name
 
     def __ge__(self,other):
-        return self.name > other.name
+        return self.name >= other.name
 
 
     def __add__(self, value):
