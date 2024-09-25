@@ -31,10 +31,14 @@ class House():
     def __ge__(self,other):
         return self.name > other.name
 
-    def __ge__(self,other):
-        return self.name >= other.name
 
     def __add__(self, value):
+        return self.number_of_floors + value
+
+    def __radd__(self, value):
+        return self.number_of_floors + value
+
+    def __iadd__(self,value):
         return self.number_of_floors + value
 
 
@@ -65,3 +69,11 @@ print(h1 != h2)
 h1 = h1 + 10
 print(h1)
 print(h1 == h2)
+#__rad__
+h1 = h1 + 5
+print(h1)
+print(h1 == h2)
+#_iadd__
+h1 = h1 + 1
+print(h1)
+print(h1 != h2)
