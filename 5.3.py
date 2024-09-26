@@ -86,8 +86,8 @@ print(h1, "__add__")
 print(h1 == h2,"__add__")
 #__rad__
 h1 = h1 + 5
-print(h1,"__rad__")
-print(h1 == h2, "__rad__")
+print(h1,"__radd__")
+print(h1 == h2, "__radd__")
 #_iadd__
 h1 = h1 + 1
 print(h1, "__iadd")
