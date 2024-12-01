@@ -11,13 +11,13 @@ class Vehicle:
 
 
     def get_model(self):
-        return('Модель:',f'{self.__model}')
+        return'Модель:',f'{self.__model}'
 
     def get_horsepower(self):
-        return('Мощность двигателя:',f'{self.__engine_power}')
+        return'Мощность двигателя:',f'{self.__engine_power}'
 
     def get_color(self):
-        return('Цвет транспорта:'f'{self.__color}')
+        return'Цвет транспорта:'f'{self.__color}'
 
 
 
@@ -28,7 +28,8 @@ class Vehicle:
         print('Владелец:',f'{self.owner}')
     def set_color(self,new_color):
         for i in  self.__COLOR_VARIANTS:
-            if i.upper() == new_color.upper():
+            colors = i
+            if colors.upper() == new_color.upper():
                 self.__color = new_color
                 break
         else:
